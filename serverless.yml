@@ -24,5 +24,5 @@ functions:
       PHONE_NUMBER: ${file(./config.yml):PHONE_NUMBER}
     handler: handler.run
     events:
-      # run at 15:00 UTC daily
-      - schedule: cron(0 15 * * ? *)
+      # run at 22:00 UTC daily
+      - schedule: cron(0 22 * * ? *)
