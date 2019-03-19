@@ -12,4 +12,5 @@ PASSWORD: mygarminconnectpassword
 STEPS_GOAL: 10000
 PHONE_NUMBER: "+15415551212"
 ```
+- `yarn` (on node v8.10)
 - `serverless deploy`
