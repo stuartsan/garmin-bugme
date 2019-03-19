@@ -46,12 +46,6 @@ exports.run = async (event, context) => {
     return Promise.resolve("all good, on track");
   }
 
-  if (!text) {
-    return Promise.reject(
-      "hrm, could not parse step count, probs gotta update somethin"
-    );
-  }
-
   const params = {
     Message: `WARNING: STEP COUNT AVG OVER LAST 7 DAYS IS ${text}`,
     PhoneNumber: `${process.env.PHONE_NUMBER}`
